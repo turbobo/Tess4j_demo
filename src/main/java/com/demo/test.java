@@ -13,7 +13,7 @@ import java.io.File;
 public class test {
     public static void main(String[] args) throws TesseractException {
         // 识别图片的路径（修改为自己的图片路径）
-        String path = "E:\\test3.jpg";
+        String path = "E:\\IdeaSpace\\Tess4j_demo\\src\\main\\resources\\pictures\\16.png";
 
         // 语言库位置（修改为跟自己语言库文件夹的路径）
         String lagnguagePath = "E:\\IdeaSpace\\Tess4j_demo\\src\\main\\resources\\tessdata";
@@ -25,7 +25,7 @@ public class test {
         instance.setDatapath(lagnguagePath);
 
         //使用字库
-        //chi_sim ：简体中文， eng    根据需求选择语言库
+        //chi_sim:简体中文      eng:英文    根据需求选择语言库
         instance.setLanguage("chi_sim+eng");
 //        instance.setLanguage("eng");
         String result = null;
